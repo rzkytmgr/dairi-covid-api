@@ -1,0 +1,23 @@
+{
+	"name": "covid-dairi",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node ./server/app",
+		"dev": "nodemon ./server/app",
+		"scrape": "node ./crawler/scraper",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.21.1",
+		"cheerio": "^1.0.0-rc.10",
+		"cli-table": "^0.3.6",
+		"express": "^4.17.1",
+		"loading-cli": "^1.1.0",
+		"puppeteer": "^10.2.0"
+	}
+}
