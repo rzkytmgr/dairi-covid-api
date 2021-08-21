@@ -3,3 +3,6 @@ node_modules
 
 # environtments
 .env
+
+# auth
+auth.txt
