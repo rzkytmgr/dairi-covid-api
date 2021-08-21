@@ -62,15 +62,22 @@ const scrape = async (id) => {
 };
 
 (async function () {
-	const n = 378;
+	const n = 1000;
 	const final = [];
-	for (let i = 1; i < n; i++) {
+	let count = 0;
+	for (let i = 0; i < n; i++) {
 		try {
 			const data = await scrape(i);
 			if (typeof data === "undefined") {
+				count++;
 				console.debug("[@]".red, "Fetching data", i);
+				if (count >= 3) {
+					console.debug("[@] Finished!".bgYellow);
+					break;
+				}
 				continue;
 			}
+			count = 0;
 			console.debug("[@]".cyan, "Fetching data", i);
 			final.push(data);
 		} catch (Exception) {
