@@ -13,16 +13,7 @@ const error = {
 };
 
 const introduction = {
-	endpoint: {
-		home: HOST,
-		semuaData: HOST + "data",
-		dataPerId: HOST + "data/{:id}",
-		dataPerTanggal: HOST + "data/{:tanggal}",
-		daftarKecamatan: HOST + "data/kecamatan",
-		perKecamatanId: HOST + "data/{:id}/{:idKecamatan}",
-		perKecamatanNama: HOST + "data/{:id}/{:namaKecamatan}",
-		kecamatanTanggal: HOST + "data/{:id}/{:tanggal}/{:namaKecamatan}",
-	},
+	documentation: "https://github.com/rzkytmgr/dairi-covid-api",
 	maintainers: "Rizky Aulia Tumangger | rzkytmgr",
 	contact: {
 		email: "rzkytmgr[at]gmail.com",
