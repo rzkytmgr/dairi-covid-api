@@ -5,7 +5,6 @@ const cheerio = require("cheerio");
 const colors = require("colors");
 
 const { SCRAPE_URL } = require("../util/constants");
-
 const { kecamatanPattern, generalPattern } = require("../crawler/pattern");
 
 const scrape = async (id) => {
