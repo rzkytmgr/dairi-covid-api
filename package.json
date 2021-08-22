@@ -1,7 +1,7 @@
 {
-	"name": "covid-dairi",
+	"name": "dairi-covid-api",
 	"version": "1.0.0",
-	"description": "",
+	"description": "unofficial covid-19 api for region Kabupaten Dairi, Sumatera Utara",
 	"main": "index.js",
 	"scripts": {
 		"start": "node ./server/app",
@@ -9,8 +9,13 @@
 		"scrape": "node ./crawler/scraper",
 		"test": "jest"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"dairi-covid-api",
+		"api",
+		"covid",
+		"covid-19"
+	],
+	"author": "rzkytmgr",
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.21.1",
