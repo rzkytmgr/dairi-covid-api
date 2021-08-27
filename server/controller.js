@@ -69,12 +69,12 @@ const CustomIdData = (req, res) => {
 	const { identifier, kecamatan } = req.params;
 	if (!isNaN(identifier)) {
 		const dataId = getById(identifier, kecamatan);
-		return typeof dataId === 'undefined' ? res.status(404).json({ ...error, message: 'Data not found!' }) : res.status(200).json({ ...success, data: dataId });
+		if (typeof dataId?.kecamatan !== 'undefined') return typeof dataId === 'undefined' ? res.status(404).json({ ...error, message: 'Data not found!' }) : res.status(200).json({ ...success, data: dataId });
 	}
 
 	if (new Date(identifier) instanceof Date && !isNaN(new Date(identifier))) {
 		const dataDate = getByDate(identifier, kecamatan);
-		return typeof dataDate === 'undefined' ? res.status(404).json({ ...error, message: 'Data not found!' }) : res.status(200).json({ ...success, data: dataDate });
+		if (typeof dataDate?.kecamatan !== 'undefined') return typeof dataDate === 'undefined' ? res.status(404).json({ ...error, message: 'Data not found!' }) : res.status(200).json({ ...success, data: dataDate });
 	}
 
 	return res.status(404).json({
