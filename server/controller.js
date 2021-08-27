@@ -1,6 +1,6 @@
 const data = require('../data/data.json');
 
-const { getById, getByDate } = require('../util/function');
+const { getById, getByDate, getRegionById } = require('../util/function');
 const { success, error, introduction } = require('../util/default');
 
 const HomeController = (req, res) => {
@@ -36,6 +36,16 @@ const DataKecamatanController = (req, res) => {
 			...success,
 			data: data,
 		});
+	}
+
+	if (typeof identifier !== 'undefined') {
+		const final = getRegionById(identifier);
+		if (final[0].hasOwnProperty('data') && typeof final[0]['data'] !== 'undefined') {
+			return res.status(200).json({
+				...success,
+				data: final,
+			});
+		}
 	}
 
 	return res.status(404).json({
