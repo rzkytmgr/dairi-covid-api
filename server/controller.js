@@ -50,6 +50,7 @@ const DataKecamatanController = (req, res) => {
 
 	return res.status(404).json({
 		...error,
+		message: 'Data not found',
 	});
 };
 
