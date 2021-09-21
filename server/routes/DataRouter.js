@@ -3,12 +3,12 @@ const router = express.Router();
 
 const middleware = require('../middleware');
 const { DataController, DataKecamatanController, CustomIdData, ListKecamatanController } = require('../controller');
-
-router.get('/', middleware, DataController);
-router.get('/kecamatan', middleware, DataKecamatanController);
-router.get('/kecamatan/list', middleware, ListKecamatanController);
-router.get('/kecamatan/:identifier', middleware, DataKecamatanController);
-router.get('/:identifier', middleware, CustomIdData);
-router.get('/:identifier/:kecamatan', middleware, CustomIdData);
+router.use(middleware);
+router.get('/', DataController);
+router.get('/kecamatan', DataKecamatanController);
+router.get('/kecamatan/list', ListKecamatanController);
+router.get('/kecamatan/:identifier', DataKecamatanController);
+router.get('/:identifier', CustomIdData);
+router.get('/:identifier/:kecamatan', CustomIdData);
 
 module.exports = router;

@@ -1,9 +1,10 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const middleware = require("../middleware");
-const { HomeController, ErrorController } = require("../controller");
+const middleware = require('../middleware');
+const { HomeController, ErrorController } = require('../controller');
 
-router.get("/", middleware, HomeController);
-router.get("*", middleware, ErrorController);
+router.use(middleware);
+router.get('/', HomeController);
+router.get('*', ErrorController);
 
 module.exports = router;
