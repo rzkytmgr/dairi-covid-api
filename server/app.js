@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(function (req, res, next) {
 	res.setHeader('Access-Control-Allow-Origin', '*');
+	next();
 });
 
 app.use('/data', DataRouter);
