@@ -2,4 +2,3 @@
 node_modules
 
 # ignore all json file
-*.json
