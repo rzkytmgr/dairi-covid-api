@@ -1,0 +1,332 @@
+[
+	{
+		"id": 0,
+		"space": "preserve",
+		"x": "130.15649",
+		"y": "243.14169",
+		"text_span": [
+			{
+				"id": "tst-0",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "130.15649",
+				"y": "243.14169"
+			},
+			{
+				"id": "tsb-1",
+				"text": "SIDIKALANG",
+				"role": "line",
+				"x": "130.15649",
+				"y": "244.90558"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"space": "preserve",
+		"x": "146.33145",
+		"y": "249.45848",
+		"text_span": [
+			{
+				"id": "tst-1",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "146.33145",
+				"y": "249.45848"
+			},
+			{
+				"id": "tsb-1",
+				"text": "SITINJO",
+				"role": "line",
+				"x": "146.33145",
+				"y": "251.22237"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"space": "preserve",
+		"x": "107.53423",
+		"y": "239.75613",
+		"text_span": [
+			{
+				"id": "tst-2",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "107.53423",
+				"y": "239.75613"
+			},
+			{
+				"id": "tsb-2",
+				"text": "BERAMPU",
+				"role": "line",
+				"x": "107.53423",
+				"y": "241.52002"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"space": "preserve",
+		"x": "90.350441",
+		"y": "228.02887",
+		"text_span": [
+			{
+				"id": "tst-3",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "90.350441",
+				"y": "228.02887"
+			},
+			{
+				"id": "tsb-3",
+				"text": "LAE PARIRA",
+				"role": "line",
+				"x": "90.350441",
+				"y": "229.79276"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"space": "preserve",
+		"x": "61.211128",
+		"y": "209.50806",
+		"text_span": [
+			{
+				"id": "tst-4",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "61.211128",
+				"y": "209.50806"
+			},
+			{
+				"id": "tsb-4",
+				"text": "SILIMA PUNGGAPUNGGA",
+				"role": "line",
+				"x": "61.211128",
+				"y": "211.27194"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"space": "preserve",
+		"x": "57.703033",
+		"y": "193.45404",
+		"text_span": [
+			{
+				"id": "tst-5",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "57.703033",
+				"y": "193.45404"
+			},
+			{
+				"id": "tsb-5",
+				"text": "SIEMPAT NEMPU HILIR",
+				"role": "line",
+				"x": "57.703033",
+				"y": "195.21793"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"space": "preserve",
+		"x": "46.00359",
+		"y": "157.71561",
+		"text_span": [
+			{
+				"id": "tst-6",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "46.00359",
+				"y": "157.71561"
+			},
+			{
+				"id": "tsb-6",
+				"text": "TANAH PINEM",
+				"role": "line",
+				"x": "46.00359",
+				"y": "159.92047"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"space": "preserve",
+		"x": "74.99176",
+		"y": "176.05716",
+		"text_span": [
+			{
+				"id": "tst-7",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "74.99176",
+				"y": "176.05716"
+			},
+			{
+				"id": "tsb-7",
+				"text": "GUNUNG SITEMBER",
+				"role": "line",
+				"x": "74.99176",
+				"y": "177.82104"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"space": "preserve",
+		"x": "94.824821",
+		"y": "193.82204",
+		"text_span": [
+			{
+				"id": "tst-8",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "94.824821",
+				"y": "193.82204"
+			},
+			{
+				"id": "tsb-8",
+				"text": "TIGALINGGA",
+				"role": "line",
+				"x": "94.824821",
+				"y": "195.58592"
+			}
+		]
+	},
+	{
+		"id": 9,
+		"space": "preserve",
+		"x": "86.934525",
+		"y": "208.5631",
+		"text_span": [
+			{
+				"id": "tst-9",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "86.934525",
+				"y": "208.5631"
+			},
+			{
+				"id": "tsb-9",
+				"text": "SIEMPAT NEMPU",
+				"role": "line",
+				"x": "86.934525",
+				"y": "210.32698"
+			}
+		]
+	},
+	{
+		"id": 10,
+		"space": "preserve",
+		"x": "108.11532",
+		"y": "211.01996",
+		"text_span": [
+			{
+				"id": "tst-10",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "108.11532",
+				"y": "211.01996"
+			},
+			{
+				"id": "tsb-10",
+				"text": "SIEMPAT NEMPU HULU",
+				"role": "line",
+				"x": "108.11532",
+				"y": "212.78384"
+			}
+		]
+	},
+	{
+		"id": 11,
+		"space": "preserve",
+		"x": "166.75005",
+		"y": "238.01051",
+		"text_span": [
+			{
+				"id": "tst-11",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "166.75005",
+				"y": "238.01051"
+			},
+			{
+				"id": "tsb-11",
+				"text": "SUMBUL",
+				"role": "line",
+				"x": "166.75005",
+				"y": "239.7744"
+			}
+		]
+	},
+	{
+		"id": 12,
+		"space": "preserve",
+		"x": "173.32431",
+		"y": "273.24783",
+		"text_span": [
+			{
+				"id": "tst-12",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "173.32431",
+				"y": "273.24783"
+			},
+			{
+				"id": "tsb-12",
+				"text": "PARBULUAN",
+				"role": "line",
+				"x": "173.32431",
+				"y": "275.01172"
+			}
+		]
+	},
+	{
+		"id": 13,
+		"space": "preserve",
+		"x": "137.39435",
+		"y": "202.51549",
+		"text_span": [
+			{
+				"id": "tst-13",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "137.39435",
+				"y": "202.51549"
+			},
+			{
+				"id": "tsb-13",
+				"text": "PEGAGAN HILIR",
+				"role": "line",
+				"x": "137.39435",
+				"y": "204.27937"
+			}
+		]
+	},
+	{
+		"id": 14,
+		"space": "preserve",
+		"x": "177.08183",
+		"y": "204.68886",
+		"text_span": [
+			{
+				"id": "tst-14",
+				"text": "KECAMATAN",
+				"role": "line",
+				"x": "177.08183",
+				"y": "204.68886"
+			},
+			{
+				"id": "tsb-14",
+				"text": "SILAHISABUNGAN",
+				"role": "line",
+				"x": "177.08183",
+				"y": "206.45274"
+			}
+		]
+	}
+]
