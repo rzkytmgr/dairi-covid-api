@@ -31,7 +31,7 @@ $(document).ready(async function () {
     if (e.target.nodeName === 'path') {
       e.target.style.fill = '#a9b3c2';
       box.style.display = 'block';
-      box.style.transform = `translate(${e.pageX + 10}px, ${e.pageY + 10}px)`;
+      box.style.transform = `translate(${e.pageX + 10}px, ${e.pageY + -40}px)`;
     }
   });
 
