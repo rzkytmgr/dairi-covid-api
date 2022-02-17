@@ -1,14 +1,14 @@
-const fs = require("fs");
-const path = require("path");
-const Axios = require("axios");
-const cheerio = require("cheerio");
-const colors = require("colors");
+const fs = require('fs');
+const path = require('path');
+const Axios = require('axios');
+const cheerio = require('cheerio');
+const colors = require('colors');
 
-const { SCRAPE_URL } = require("../util/constants");
-const { kecamatanPattern, generalPattern } = require("../crawler/pattern");
+const { SCRAPE_URL } = require('../util/constants');
+const { kecamatanPattern, generalPattern } = require('../crawler/pattern');
 
-const scrape = async (id) => {
-	if (typeof id === "undefined") return [];
+const scrape = async id => {
+	if (typeof id === 'undefined') return [];
 
 	const URL = SCRAPE_URL + id;
 	try {
@@ -16,24 +16,24 @@ const scrape = async (id) => {
 		const $ = cheerio.load(data);
 
 		const final = {};
-		final["id"] = Number(id);
-		final["tanggal"] = new Date($("input[id=current-date]").val());
-		final["dataUrl"] = URL;
-		final["data"] = {};
-		final["kecamatan"] = [];
+		final['id'] = Number(id);
+		final['tanggal'] = new Date($('input[id=current-date]').val());
+		final['dataUrl'] = URL;
+		final['data'] = {};
+		final['kecamatan'] = [];
 
-		$(".card-body span.h2").each(function (index) {
+		$('.card-body span.h2').each(function (index) {
 			const self = $(this);
-			const key = { 0: "kontak_erat", 1: "suspek", 2: "konfirmasi_positif", 3: "konfirmasi_sembuh" };
-			final["data"][key[index]] = Number(self.text());
+			const key = { 0: 'kontak_erat', 1: 'suspek', 2: 'konfirmasi_positif', 3: 'konfirmasi_sembuh' };
+			final['data'][key[index]] = Number(self.text());
 		});
 
-		$("table.table tbody tr").each(function (index) {
+		$('table.table tbody tr').each(function (index) {
 			const self = $(this);
 
 			const kecamatan = {
 				id: 0,
-				nama: "",
+				nama: '',
 				data: {
 					kontak_erat: 0,
 					suspek: 0,
@@ -44,13 +44,13 @@ const scrape = async (id) => {
 				},
 			};
 
-			kecamatan["id"] = index;
-			kecamatan["nama"] = self.find("th").text().trim();
-			final["kecamatan"].push(kecamatan);
+			kecamatan['id'] = index;
+			kecamatan['nama'] = self.find('th').text().trim();
+			final['kecamatan'].push(kecamatan);
 
-			self.find("td").each(function (td) {
-				const key = { 0: "kontak_erat", 1: "suspek", 2: "probable", 3: "konfirmasi_positif", 4: "konfirmasi_sembuh", 5: "meninggal" };
-				kecamatan["data"][key[td]] = Number($(this).text().trim());
+			self.find('td').each(function (td) {
+				const key = { 0: 'kontak_erat', 1: 'suspek', 2: 'probable', 3: 'konfirmasi_positif', 4: 'konfirmasi_sembuh', 5: 'meninggal' };
+				kecamatan['data'][key[td]] = Number($(this).text().trim());
 			});
 		});
 
@@ -67,23 +67,23 @@ const scrape = async (id) => {
 	for (let i = 0; i < n; i++) {
 		try {
 			const data = await scrape(i);
-			if (typeof data === "undefined") {
+			if (typeof data === 'undefined') {
 				count++;
-				console.debug("[@]".red, "Fetching data", i);
-				if (count >= 3) {
-					console.debug("[@] Finished!".bgYellow);
+				console.debug('[@]'.red, 'Fetching data', i);
+				if (count >= 4) {
+					console.debug('[@] Finished!'.bgYellow);
 					break;
 				}
 				continue;
 			}
 			count = 0;
-			console.debug("[@]".cyan, "Fetching data", i);
+			console.debug('[@]'.cyan, 'Fetching data', i);
 			final.push(data);
 		} catch (Exception) {
-			console.log("Error!");
+			console.log('Error!');
 		}
 	}
 
-	const jsonPath = path.resolve("data", "data.json");
-	fs.writeFileSync(jsonPath, JSON.stringify(final), "utf-8");
+	const jsonPath = path.resolve('data', 'data.json');
+	fs.writeFileSync(jsonPath, JSON.stringify(final), 'utf-8');
 })();
